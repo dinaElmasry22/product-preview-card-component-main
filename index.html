@@ -7,22 +7,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@700;900&family=Open+Sans:wdth,wght@97.2,300;100,500&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
-      background-color: rgb(255, 247, 235);
+      background-color:hsl(30, 38%, 92%);
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 26px;
+font-family: 'Montserrat', sans-serif;
+line-height: 24px;
     }
 
     section {
-      width: 650px;
+      width: 580px;
       height: 500px;
       display: flex;
-      margin: 50px auto;
+      margin: 20px auto;
     }
 
     .desktopPhoto {
@@ -47,10 +50,10 @@
       margin-top: 0;
       margin-bottom: 0;
       text-transform: capitalize;
-      font-family: serif;
+      font-family: 'Fraunces', serif;
       font-size: 38px;
       font-weight: 600;
-      line-height: 36px;
+      line-height: 38px;
     }
 
     .title {
@@ -58,7 +61,8 @@
     }
 
     p {
-      color: gray;
+      color: hsl(228, 12%, 48%);
+      font-size: 14px;
     }
 
     button {
@@ -66,31 +70,37 @@
       height: 50px;
       border: none;
       color: white;
-      background-color: rgb(0, 132, 96);
+      background-color: hsl(158, 36%, 37%);
       border-radius: 8px;
-      font-size: 20px;
       cursor: pointer;
-      margin: 20px auto;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+    svg {
+      padding-right: 10px;
+    }
     .price {
       display: flex;
       align-items: center;
       margin-top: 30px;
+      /* font-family: 'Fraunces', serif; */
+
     }
 
     .sale {
       font-size: 35px;
       margin-right: 25px;
-      color: rgb(0, 132, 96);
+      color: hsl(158, 36%, 37%);
     }
 
     .oldValue {
       text-decoration: line-through;
-      color: gray;
+      color: hsl(228, 12%, 48%);
     }
 
-    @media (max-width : 950px) {
+    @media (max-width : 375px) {
       body {
         height: 700px;
       }
@@ -101,7 +111,7 @@
       }
 
       h1 {
-        font-size: 34px;
+        /* font-size: 34px; */
       }
 
       .desktopPhoto {
@@ -115,7 +125,8 @@
       }
 
       .cardInfo {
-        background-color: rgb(255, 255, 255);
+        
+        background-color: #ffffff;
         border-radius: 0 0 20px 20px;
         padding: 10px 20px;
       }
@@ -136,7 +147,10 @@
         <span class="sale">149.99$</span>
         <span class="oldValue">169.99$</span>
       </div>
-      <button><i class="fa-regular fa-cart-shopping"></i> Add to Card</button>
+      <button><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 
+        0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 
+        4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 
+        1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg> Add to Cart</button>
     </div>
   </section>
 </body>
