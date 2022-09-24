@@ -32,9 +32,11 @@
       background-color: rgb(255, 255, 255);
       border-radius: 12px;
     }
-
+picture{
+  width: 100%;
+}
     img {
-      height: 455px;
+      height: 100%;
       border-radius: 12px 0 0 12px;
     }
 
@@ -58,6 +60,7 @@
     .title {
       letter-spacing: 3px;
       margin: 0;
+
     }
 
     p {
@@ -76,10 +79,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition:all 0.5s linear ;
+
     }
 
     button:hover {
-      background-color: hsl(212, 21%, 14%);
+      background-color: hsl(158, 61%, 18%);
     }
 
     svg {
@@ -104,7 +109,7 @@
       font-size: smaller;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
 
       main {
         width: 330px;
@@ -115,7 +120,6 @@
 
       img {
         width: 100%;
-        height: 210px;
         border-radius: 12px 12px 0 0;
       }
 
@@ -148,9 +152,9 @@
 <body>
   <main>
     <picture>
-      <source media="(min-width: 800px)" srcset="./images/image-product-desktop.jpg">
-      <source media="(min-width: 300px)" srcset="./images/image-product-mobile.jpg">
-      <img src="./images/image-product-desktop.jpg" alt="photo">
+      <source media="(min-width: 601px)" srcset="./images/image-product-desktop.jpg">
+      <source media="(max-width: 600px)" srcset="./images/image-product-mobile.jpg">
+      <img src="./images/image-product-desktop.jpg">
     </picture>
     <div class="card-info">
       <p class="title">PERFUME</p>
