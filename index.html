@@ -7,152 +7,169 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Product preview card component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@700;900&family=Open+Sans:wdth,wght@97.2,300;100,500&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Sacramento&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Istok+Web:wght@700&family=Montserrat&family=Nunito+Sans:wght@700;900&family=Open+Sans:wdth,wght@97.2,300;100,500&family=Outfit:wght@300;400;600&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Rubik+Puddles&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Montserrat&family=Nunito+Sans:wght@700;900&family=Open+Sans:wdth,wght@97.2,300;100,500&family=Outfit:wght@300;400;600&family=Rubik+Mono+One&family=Rubik+Moonrocks&display=swap');
+
     body {
-            background-color:rgb(255, 249, 239);
-      box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
-line-height: 24px;
-    }
-
-    section {
-      width: 580px;
-      height: 500px;
+      min-height: 100vh;
       display: flex;
-      margin: 20px auto;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(30, 38%, 92%);
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
     }
 
-    .desktopPhoto {
-      height: inherit;
-      width: 50%;
-      border-radius: 20px 0 0 20px;
+    main {
+      box-sizing: border-box;
+      width: 600px;
+      height: 455px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 12px;
     }
 
-    .mobilePhoto {
-      display: none;
+    img {
+      height: 455px;
+      border-radius: 12px 0 0 12px;
     }
 
     .cardInfo {
       background-color: rgb(255, 255, 255);
-      width: 50%;
-      border-radius: 0 20px 20px 0;
-      padding: 20px 35px;
-      box-sizing: border-box;
+      border-radius: 0 12px 12px 0;
+      padding-right: 30px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
     }
 
     h1 {
-      margin-top: 0;
-      margin-bottom: 0;
+      color: hsl(212, 21%, 14%);
+      margin: 0;
       text-transform: capitalize;
       font-family: 'Fraunces', serif;
-      font-size: 38px;
-      font-weight: 600;
-      line-height: 38px;
+      font-size: 35px;
     }
 
     .title {
       letter-spacing: 3px;
+      margin: 0;
     }
 
     p {
       color: hsl(228, 12%, 48%);
       font-size: 14px;
+      margin: 0;
     }
 
     button {
-      width: 100%;
-      height: 50px;
+      height: 40px;
       border: none;
       color: white;
       background-color: hsl(158, 36%, 37%);
       border-radius: 8px;
       cursor: pointer;
-      margin: 50px auto;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
+    button:hover {
+      background-color: hsl(212, 21%, 14%);
+    }
+
     svg {
       padding-right: 10px;
     }
+
     .price {
       display: flex;
       align-items: center;
-      margin-top: 30px;
-      /* font-family: 'Fraunces', serif; */
-
     }
 
-    .sale {
-      font-size: 35px;
-      margin-right: 25px;
+    ins {
+      font-family: 'Fraunces', serif;
+      text-decoration: none;
+      font-size: 30px;
       color: hsl(158, 36%, 37%);
+      margin-right: 20px;
     }
 
-    .oldValue {
-      text-decoration: line-through;
+    del {
       color: hsl(228, 12%, 48%);
+      font-size: smaller;
     }
 
-    @media (max-width : 375px) {
-      body {
-        height: 700px;
+    @media (max-width: 800px) {
+
+      main {
+        width: 330px;
+        height: 92vh;
+        flex-direction: column;
+        gap: 0px;
       }
 
-      section {
-        display: grid;
-        
-      }
-
-      h1 {
-        /* font-size: 34px; */
-      }
-
-      .desktopPhoto {
-        display: none;
-      }
-
-      .mobilePhoto {
-        border-radius: 20px 20px 0 0;
-        width: 50%;
-        display: block;
+      img {
+        width: 100%;
+        height: 210px;
+        border-radius: 12px 12px 0 0;
       }
 
       .cardInfo {
-        
-        background-color: #ffffff;
-        border-radius: 0 0 20px 20px;
-        padding: 10px 20px;
+        height: 100%;
+        border-radius: 0 0 12px 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 0px;
+      }
+      .price {
+        margin: 0;
+      }
+      h1 {
+        font-size: 28px;
+      }
+
+      ins {
+        font-size: 30px;
+      }
+
+
+      button {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <section>
-    <img src="./images/image-product-desktop.jpg" class="desktopPhoto" alt="image">
-    <img src="./images/image-product-mobile.jpg" class="mobilePhoto" alt="image">
+  <main>
+    <picture>
+      <source media="(min-width: 800px)" srcset="./images/image-product-desktop.jpg">
+      <source media="(min-width: 300px)" srcset="./images/image-product-mobile.jpg">
+      <img src="./images/image-product-desktop.jpg">
+    </picture>
     <div class="cardInfo">
       <p class="title">PERFUME</p>
       <h1>gabrielle essence eau de parfum</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing. Inventore, dignissimos vero repellendus amet officiis iste
-        corporis harum.</p>
+      <p>A floral, solar and voluptuous
+
+        interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
       <div class="price">
-        <span class="sale">149.99$</span>
-        <span class="oldValue">169.99$</span>
+        <ins>$149.99</ins>
+        <del class="oldValue">$169.99</del>
       </div>
-      <button><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 
+      <button><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 
         0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 
         4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 
-        1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg> Add to Cart</button>
+        1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF" />
+        </svg> Add to Cart</button>
     </div>
-  </section>
+  </main>
 </body>
 
 </html>
