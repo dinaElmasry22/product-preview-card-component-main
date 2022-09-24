@@ -16,12 +16,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Overview
 
 ### Screenshot
-![image](https://user-images.githubusercontent.com/113911084/192100392-94d7490f-f058-4eee-b665-fa8f4fa8ab92.png)
+![image](https://user-images.githubusercontent.com/113911084/192107537-639482bb-1324-4f90-8120-b54c8e815983.png)
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-main-1Hc4SXNMAP))]
-- Live Site URL: [https://dinaelmasry22.github.io/product-preview-card-component-main/]
+- Solution URL:[https://www.frontendmentor.io/challenges/product-preview-card-component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-main-1Hc4SXNMAP)
+- Live Site URL: [https://dinaelmasry22.github.io/](https://dinaelmasry22.github.io/product-preview-card-component-main/)
 
 ## My process
 
@@ -58,12 +58,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Useful resources
 
-- [https://www.freecodecamp.org/arabic/news/stlht-tsmy-css-twfr-aalyk-saat-mn-ltshyh/] - This site helped me to name css classes in the correct way. I really liked this pattern and will use it going forward.
+- [https://www.freecodecamp.org](https://www.freecodecamp.org/arabic/news/stlht-tsmy-css-twfr-aalyk-saat-mn-ltshyh/) - This site helped me to name css classes in the correct way. I really liked this pattern and will use it going forward.
 
 ## Author
 
 - Frontend Mentor - [https://www.frontendmentor.io/profile/dinaElmasry22]
-- Twitter - [https://twitter.com/Dina7465?t=zk-rjh7LKaxehwGkNiAvfQ&s=09]
+- Twitter - [https://twitter.com/Dina7465](https://twitter.com/Dina7465?t=zk-rjh7LKaxehwGkNiAvfQ&s=09)
 
 ## Acknowledgments
 - My friend Zainab  [(https://www.behance.net/zenabmohammed1)]
